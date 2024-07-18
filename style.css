@@ -79,12 +79,12 @@ time,
 mark,
 audio,
 video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -98,32 +98,83 @@ hgroup,
 menu,
 nav,
 section {
-	display: block;
+    display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
 }
 ol,
 ul {
-	list-style: none;
+    list-style: none;
 }
 blockquote,
 q {
-	quotes: none;
+    quotes: none;
 }
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-	content: "";
-	content: none;
+    content: "";
+    content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
+
 *,
 *::before,
 *::after {
-	box-sizing: border-box;
+    box-sizing: border-box;
+    /*outline: solid 1px;*/
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+img {
+    vertical-align: middle;
+}
+body {
+    font-family: "Noto Sans TC", "Roboto", sans-serif;
+    line-height: 1.5;
+}
+/*設定*/
+.container {
+    width: 1296px;
+    margin: 0 auto;
+}
+.d-flex {
+    display: flex;
+}
+.jc-sb {
+    justify-content: space-between;
+}
+.mr-8 {
+    margin-right: 64px;
+}
+
+.nav {
+    background: #aa0601;
+    color: #fff;
+}
+.nav-menu img {
+    width: 80px;
+    padding: 12px 0;
+}
+.menu {
+    padding: 25px 0;
+    font-size: 20px;
+    color: #fff;
+}
+.title-list {
+    padding: 24px 150px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #000;
+    border: 1px solid #dcdcdc;
+}
+.title-list:hover {
+    border-bottom: 8px solid #aa0601;
 }
