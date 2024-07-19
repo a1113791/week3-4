@@ -142,7 +142,7 @@ body {
 }
 /*設定*/
 .container {
-	width: 1296px;
+	max-width: 1296px;
 	margin: 0 auto;
 }
 .d-flex {
@@ -324,4 +324,27 @@ body {
 .footer-copyright {
 	padding: 32px 0;
 	color: #fff;
+}
+
+@media (max-width: 767px) {
+	.container {
+		max-width: 696px;
+	}
+
+	.md-mb-5 {
+		margin-bottom: 40px;
+	}
+	.md-p-16 {
+		padding: 16px 48px 16px 49px;
+	}
+	.md-w48 {
+		width: 48%;
+	}
+
+	.title-list {
+		font-size: 24px;
+	}
+	.card img {
+		width: 336px;
+	}
 }
